@@ -29,7 +29,7 @@ export default function InstrumentCard({ instrument }) {
           
         }
         .content {
-          background: radial-gradient(#795548 0%, #795548 100%);
+          background: radial-gradient(#a1887f 0%, #a1887f 100%);
           border: 2px solid white;
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
           margin: 0;
