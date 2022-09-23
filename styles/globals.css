@@ -23,6 +23,7 @@ header a {
 }
 header h1, header h2 {
   margin: 0;
+  color: #3e2723;
 }
 header span {
   display: block;
