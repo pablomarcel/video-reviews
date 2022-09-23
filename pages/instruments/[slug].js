@@ -81,8 +81,9 @@ export default function InstrumentDetails({ instrument }) {
           text-transform: uppercase;
         }
         .banner h2 {
+          color: #3e2723;
           margin: 0;
-          border: 2px solid black;
+          border: 2px solid #3e2723;
           display: inline-block;
           padding: 20px;
           position: relative;
@@ -96,7 +97,15 @@ export default function InstrumentDetails({ instrument }) {
         
         }
         .description h3 {
-          color: black;
+          color: #3e2723;
+        
+        }
+        .info{
+          color: #263238;
+        
+        }
+        .info h3 {
+          color: #3e2723;
         
         }
         .info p {
