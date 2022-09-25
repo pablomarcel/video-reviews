@@ -1,6 +1,8 @@
+import React from 'react'
 import { createClient } from 'contentful'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
+import ReactPlayer from 'react-player'
 import Skeleton from '../../components/Skeleton'
 
 const client = createClient({
@@ -51,14 +53,16 @@ export default function ReviewDetails({ review }) {
 
     const { featuredVideo, title, publisher, genre, description } = review.fields
 
+    const videoUrl = 'https:'+ featuredVideo.fields.file.url
+
     return (
         <div>
             <div className="banner">
-                <Image
-                    src={'https:' + featuredVideo.fields.file.url}
-                    width={featuredVideo.fields.file.details.image.width}
-                    height={featuredVideo.fields.file.details.image.height}
-                />
+
+                <video autoPlay loop controls style={{ width: '640px', height: '360px' }}>
+                    <source src={'https:' + featuredVideo.fields.file.url} />
+                </video>
+
                 <h2>{ title }</h2>
             </div>
 
