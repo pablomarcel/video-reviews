@@ -8,9 +8,9 @@ export default function Layout({ children }) {
           <a>
             <h1>
               <span>Museum of</span>
-              <span>Musical</span>
+              <span>Video</span>
             </h1>
-            <h2>Instruments</h2>
+            <h2>Reviews</h2>
           </a>
         </Link>
       </header>
@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Museum of Musical Instruments 2022 :)</p>
+        <p>Museum of Video Reviews 2022 :)</p>
       </footer>
     </div>
   )

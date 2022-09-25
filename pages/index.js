@@ -1,5 +1,5 @@
 import { createClient } from 'contentful'
-import InstrumentCard from '../components/InstrumentCard'
+import ReviewCard from "../components/ReviewCard";
 
 export async function getStaticProps() {
 
@@ -8,27 +8,27 @@ export async function getStaticProps() {
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   })
 
-  const res = await client.getEntries({ content_type: "instrument" })
+  const res = await client.getEntries({ content_type: "review" })
 
   return {
     props: {
-      instruments: res.items,
+      reviews: res.items,
     },
     revalidate: 1
   }
 }
 
-export default function Instruments({ instruments }) {
-  console.log(instruments)
+export default function Reviews({ reviews }) {
+  console.log(reviews)
 
   return (
-    <div className="instrument-list">
-      {instruments.map(instrument => (
-        <InstrumentCard key={instrument.sys.id} instrument={instrument} />
+    <div className="review-list">
+      {reviews.map(review => (
+        <ReviewCard key={review.sys.id} review={review} />
       ))}
 
       <style jsx>{`
-        .instrument-list {
+        .review-list {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-gap: 20px 60px;

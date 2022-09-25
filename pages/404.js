@@ -22,7 +22,7 @@ const NotFound = () => {
           background: #fff;
           padding: 30px;
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-          transform: rotateZ(-1deg);
+          transform: rotateZ(0deg);
         }
         h1 {
           font-size: 3em;
