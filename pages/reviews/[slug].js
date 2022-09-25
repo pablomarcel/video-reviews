@@ -59,14 +59,19 @@ export default function ReviewDetails({ review }) {
         <div>
             <div className="banner">
 
-                <video autoPlay loop controls style={{ width: '640px', height: '360px' }}>
-                    <source src={'https:' + featuredVideo.fields.file.url} />
-                </video>
+                <ReactPlayer url={videoUrl} controls />
 
+            </div>
+
+            <div className="title">
                 <h2>{ title }</h2>
+            </div>
+            <div>
+
             </div>
 
             <div className="info">
+
                 <p>{ publisher }</p>
                 <h3>Genre:</h3>
 
@@ -84,15 +89,16 @@ export default function ReviewDetails({ review }) {
         h2,h3 {
           text-transform: uppercase;
         }
-        .banner h2 {
+        .title h2 {
           color: #3e2723;
           margin: 0;
           border: 2px solid #3e2723;
           display: inline-block;
           padding: 20px;
           position: relative;
-          top: -31px;
+          top: 30px;
           left: 0;
+          bottom: 30px;
           transform: rotateZ(0deg);
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
@@ -108,12 +114,14 @@ export default function ReviewDetails({ review }) {
           color: #263238;
         
         }
+
         .info h3 {
           color: #3e2723;
         
         }
         .info p {
-          margin: 0;
+          top:30px;
+          margin-top: 60px;
         }
         .info span::after {
           content: ", ";
