@@ -29,13 +29,13 @@ export default function ReviewCard({ review }) {
           
         }
         .content {
-          background: radial-gradient(#a1887f 0%, #a1887f 100%);
+          background: radial-gradient(#ba68c8 0%, #ba68c8 100%);
           border: 2px solid white;
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
           margin: 0;
           position: relative;
-          top: -40px;
-          left: -10px;
+          top: 0;
+          left: 0;
         }
         .info {
           padding: 16px;
@@ -47,7 +47,7 @@ export default function ReviewCard({ review }) {
         }
         .info p {
           margin: 0;
-          color: #bbb;
+          color: #cfd8dc;
         }
         .actions {
           margin-top: 20px;
@@ -55,8 +55,8 @@ export default function ReviewCard({ review }) {
           justify-content: flex-end;
         }
         .actions a {
-          color: #fff;
-          background: #3e2723;
+          color: white;
+          background: #4a148c;
           padding: 16px 24px;
           text-decoration: none;
         }
