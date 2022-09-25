@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-  background: radial-gradient(at top left, #bcaaa4 0%, #bcaaa4 100%);
+  background: radial-gradient(at top left, #f3e5f5 0%, #4a148c 100%);
   margin: 0;
   font-family: 'Roboto';
   font-size: 1.5em;
@@ -23,7 +23,7 @@ header a {
 }
 header h1, header h2 {
   margin: 0;
-  color: #3e2723;
+  color: #aa00ff;
 }
 header span {
   display: block;
@@ -42,8 +42,8 @@ header h2 {
   font-weight: 400;
 }
 footer {
-  background: #3e2723;
-  color: #bbb;
+  background: #4a148c;
+  color: #d1c4e9;
   padding: 40px;
   text-align: center;
   margin-top: auto

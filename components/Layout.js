@@ -20,7 +20,7 @@ export default function Layout({ children }) {
       </div>
 
       <footer>
-        <p>Museum of Video Reviews 2022 :)</p>
+        <p>Video Game Reviews 2022</p>
       </footer>
     </div>
   )

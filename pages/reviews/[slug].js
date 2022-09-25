@@ -90,9 +90,9 @@ export default function ReviewDetails({ review }) {
           text-transform: uppercase;
         }
         .title h2 {
-          color: #3e2723;
+          color: #aa00ff;
           margin: 0;
-          border: 2px solid #3e2723;
+          border: 2px solid #aa00ff;
           display: inline-block;
           padding: 20px;
           position: relative;
@@ -103,20 +103,20 @@ export default function ReviewDetails({ review }) {
           box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
         }
         .description{
-          color: #263238;
+          color: #cfd8dc;
         
         }
         .description h3 {
-          color: #3e2723;
+          color: #aa00ff;
         
         }
         .info{
-          color: #263238;
+          color: #cfd8dc;
         
         }
 
         .info h3 {
-          color: #3e2723;
+          color: #aa00ff;
         
         }
         .info p {
